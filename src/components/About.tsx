@@ -20,7 +20,7 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
-                I'm a passionate full-stack developer with over 5 years of experience building 
+                I'm a passionate full-stack developer with over 3 years of experience building 
                 exceptional digital experiences. I specialize in creating robust, scalable 
                 applications that solve real-world problems.
               </p>
@@ -53,7 +53,7 @@ const About = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600 dark:text-gray-400">Experience</span>
-                      <span className="font-bold text-gray-900 dark:text-white">5+ Years</span>
+                      <span className="font-bold text-gray-900 dark:text-white">3+ Years</span>
                     </div>
                     <div className="flex justify-between items-center">
                       <span className="text-gray-600 dark:text-gray-400">Projects Completed</span>
