@@ -6,6 +6,16 @@ const Resume = () => {
   const visibleSections = useScrollAnimation();
   const isVisible = visibleSections.has('resume');
 
+  const downloadResume = () => {
+    // Create a temporary link element to trigger download
+    const link = document.createElement('a');
+    link.href = '/Youssef_Arafat_Resume.docx';
+    link.download = 'Youssef_Arafat_Resume.docx';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="resume" data-animate className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -109,7 +119,10 @@ const Resume = () => {
                 </p>
                 
                 <div className="space-y-4">
-                  <button className="w-full bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center space-x-2">
+                  <button 
+                    onClick={downloadResume}
+                    className="w-full bg-white text-purple-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200 flex items-center justify-center space-x-2"
+                  >
                     <Download className="h-5 w-5" />
                     <span>Download Resume</span>
                   </button>
